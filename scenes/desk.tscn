@@ -1,32 +1,96 @@
-[gd_scene load_steps=6 format=3 uid="uid://bygxvtgg3jklr"]
+[gd_scene load_steps=8 format=3 uid="uid://bygxvtgg3jklr"]
 
 [ext_resource type="Texture2D" uid="uid://c17frs8sdtyjy" path="res://assets/Background.png" id="1_wiga1"]
 [ext_resource type="PackedScene" uid="uid://dshxm5lj2oqo5" path="res://prefabs/monitor.tscn" id="2_53hui"]
 [ext_resource type="Script" path="res://scripts/GameManager.gd" id="3_ghxev"]
 [ext_resource type="Texture2D" uid="uid://dkny6r5ss0ow2" path="res://assets/Monitor.png" id="4_nk6r2"]
 [ext_resource type="Script" path="res://scripts/LeftMonitorUI.gd" id="5_orekd"]
+[ext_resource type="Texture2D" uid="uid://d04k5rghfgarf" path="res://assets/CloseButton.png" id="6_bk5yp"]
+[ext_resource type="Script" path="res://scripts/RightMonitorUI.gd" id="6_la6yy"]
 
 [node name="Desk" type="Node2D"]
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(3, 3)
 texture = ExtResource("1_wiga1")
 
 [node name="Camera2D" type="Camera2D" parent="."]
-zoom = Vector2(4.5, 2.7)
+zoom = Vector2(1.5, 0.9)
 
 [node name="LeftMonitorMini" parent="." instance=ExtResource("2_53hui")]
-position = Vector2(-35, 40)
+position = Vector2(-28, 107)
+scale = Vector2(3, 3)
 
 [node name="RightMonitorMini" parent="." instance=ExtResource("2_53hui")]
-position = Vector2(35, 40)
+position = Vector2(189, 107)
+scale = Vector2(3, 3)
 
-[node name="GameManager" type="Node2D" parent="."]
+[node name="GameManager" type="Node2D" parent="." node_paths=PackedStringArray("email_client", "y_client")]
 script = ExtResource("3_ghxev")
+email_client = NodePath("../LeftMonitorUI/Control/EmailClient")
+y_client = NodePath("../LeftMonitorUI/Control/Y")
 
 [node name="LeftMonitorUI" type="Sprite2D" parent="."]
 position = Vector2(0, -1.19209e-07)
-scale = Vector2(3.48571, 3.1)
+scale = Vector2(10.5, 10.5)
 texture = ExtResource("4_nk6r2")
 script = ExtResource("5_orekd")
 
+[node name="Control" type="Control" parent="LeftMonitorUI"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Button" type="Button" parent="LeftMonitorUI/Control"]
+layout_mode = 0
+offset_left = 28.6886
+offset_top = -22.2581
+offset_right = 52.6886
+offset_bottom = 1.74194
+scale = Vector2(0.25, 0.25)
+icon = ExtResource("6_bk5yp")
+flat = true
+
+[node name="EmailClient" type="ItemList" parent="LeftMonitorUI/Control"]
+layout_mode = 0
+offset_left = -32.6667
+offset_top = -20.7619
+offset_right = 291.333
+offset_bottom = 341.238
+scale = Vector2(0.1, 0.1)
+
+[node name="Y" type="ItemList" parent="LeftMonitorUI/Control"]
+layout_mode = 0
+offset_left = 0.095238
+offset_top = -20.7619
+offset_right = 289.095
+offset_bottom = 345.238
+scale = Vector2(0.1, 0.1)
+
+[node name="RightMonitorUI" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(0.0929775, 0)
+scale = Vector2(10.5, 10.5)
+texture = ExtResource("4_nk6r2")
+script = ExtResource("6_la6yy")
+
+[node name="Button" type="Button" parent="RightMonitorUI"]
+offset_left = 28.9708
+offset_top = -21.9178
+offset_right = 52.9708
+offset_bottom = 2.08219
+scale = Vector2(0.25, 0.25)
+size_flags_horizontal = 4
+size_flags_vertical = 4
+size_flags_stretch_ratio = 0.0
+icon = ExtResource("6_bk5yp")
+flat = true
+
 [connection signal="left_monitor_pressed" from="LeftMonitorMini" to="LeftMonitorUI" method="show_monitor"]
+[connection signal="right_monitor_pressed" from="RightMonitorMini" to="RightMonitorUI" method="show_monitor"]
+[connection signal="right_monitor_pressed" from="RightMonitorMini" to="RightMonitorUI" method="open_monitor"]
+[connection signal="pressed" from="LeftMonitorUI/Control/Button" to="LeftMonitorUI" method="close_monitor"]
+[connection signal="item_clicked" from="LeftMonitorUI/Control/EmailClient" to="GameManager" method="on_item_clicked_email"]
+[connection signal="item_clicked" from="LeftMonitorUI/Control/Y" to="GameManager" method="on_item_clicked_y"]
+[connection signal="pressed" from="RightMonitorUI/Button" to="RightMonitorUI" method="close_monitor"]

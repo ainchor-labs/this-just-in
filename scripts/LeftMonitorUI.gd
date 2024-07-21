@@ -4,11 +4,10 @@ extends Sprite2D
 func _ready():
 	self.visible = false
 
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
-	pass
-
 func show_monitor():
-	print("asdf")
+	print("Showing Left Monitor")
 	self.visible = true
+
+func close_monitor():
+	print("Closing Left Monitor")
+	self.visible = false
