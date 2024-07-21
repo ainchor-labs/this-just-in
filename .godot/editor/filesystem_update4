@@ -1,0 +1,6 @@
+res://scenes/desk.tscn
+res://scripts/GameManager.gd
+res://prefabs/monitor.tscn
+res://scripts/monitor.gd
+res://scenes/LeftMonitorUI.gd
+res://scripts/LeftMonitorUI.gd

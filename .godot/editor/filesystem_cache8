@@ -1,0 +1,14 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1721530811
+icon.png::CompressedTexture2D::8293945978518095098::1721307935::1721307942::1::::<><>::
+::res://assets/::1721517938
+Background.png::CompressedTexture2D::6664146330786642290::1721517356::1721517938::1::::<><>::
+Monitor.png::CompressedTexture2D::7889500905783827175::1721517921::1721517924::1::::<><>::
+::res://prefabs/::1721531509
+monitor.tscn::PackedScene::8438531394341713978::1721531509::0::1::::<><>::uid://dkny6r5ss0ow2::::res://assets/Monitor.png<>res://scripts/monitor.gd
+::res://scenes/::1721531509
+desk.tscn::PackedScene::4084774197558743287::1721531530::0::1::::<><>::uid://c17frs8sdtyjy::::res://assets/Background.png<>uid://dshxm5lj2oqo5::::res://prefabs/monitor.tscn<>res://scripts/GameManager.gd<>uid://dkny6r5ss0ow2::::res://assets/Monitor.png<>res://scenes/LeftMonitorUI.gd
+LeftMonitorUI.gd::GDScript::-1::1721531503::0::1::::<>Sprite2D<>::
+::res://scripts/::1721531292
+GameManager.gd::GDScript::-1::1721531185::0::1::::<>Node2D<>::
+monitor.gd::GDScript::-1::1721531292::0::1::::<>Area2D<>::
