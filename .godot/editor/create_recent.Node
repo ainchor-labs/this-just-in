@@ -1,8 +1,10 @@
-Label
 Button
-ItemList
+CheckButton
 Control
 Sprite2D
+Panel
+ItemList
+Label
 CollisionShape2D
 Area2D
 Node2D

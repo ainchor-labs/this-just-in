@@ -6,6 +6,9 @@ extends Node2D
 var email_json_obj
 var y_json_obj
 
+signal send_email_story
+signal send_y_story
+
 func read_json_file(json_file_path):
 	var file = FileAccess.open(json_file_path, FileAccess.READ)
 	var content = file.get_as_text()
@@ -35,3 +38,11 @@ func on_item_clicked_email(index, at_position, mouse_button_index):
 func on_item_clicked_y(index, at_position, mouse_button_index):
 	print("Clicked Y Client")
 	print(index)
+
+func send_y_content_to_story_generator(index, at_position, mouse_button_index):
+	print("Sending y content to story generator")
+	send_y_story.emit(y_json_obj[index])
+
+func send_email_content_to_story_generator(index, at_position, mouse_button_index):
+	print("Sending email content_to_story_generator")
+	send_email_story.emit(email_json_obj[index])
