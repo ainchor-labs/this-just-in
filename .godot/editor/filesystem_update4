@@ -1,7 +1,8 @@
-res://scenes/desk.tscn
-res://scripts/GameManager.gd
-res://prefabs/monitor.tscn
-res://prefabs/EmailClientItem.tscn
 res://prefabs/list_item.tscn
-res://scripts/monitor.gd
+res://scripts/GameManager.gd
+res://scenes/desk.tscn
 res://scripts/list_item.gd
+res://scripts/email_data.json
+res://scenes/story_list.gd
+res://scripts/monitor.gd
+res://scripts/LeftMonitorUI.gd

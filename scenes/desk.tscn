@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://bygxvtgg3jklr"]
+[gd_scene load_steps=10 format=3 uid="uid://bygxvtgg3jklr"]
 
 [ext_resource type="Texture2D" uid="uid://c17frs8sdtyjy" path="res://assets/Background.png" id="1_wiga1"]
 [ext_resource type="PackedScene" uid="uid://dshxm5lj2oqo5" path="res://prefabs/monitor.tscn" id="2_53hui"]
@@ -7,6 +7,8 @@
 [ext_resource type="Script" path="res://scripts/LeftMonitorUI.gd" id="5_orekd"]
 [ext_resource type="Texture2D" uid="uid://d04k5rghfgarf" path="res://assets/CloseButton.png" id="6_bk5yp"]
 [ext_resource type="Script" path="res://scripts/RightMonitorUI.gd" id="6_la6yy"]
+[ext_resource type="PackedScene" uid="uid://bfjnyjs7yiddd" path="res://prefabs/list_item.tscn" id="8_7sqd6"]
+[ext_resource type="Script" path="res://scenes/story_list.gd" id="8_v5cjp"]
 
 [node name="Desk" type="Node2D"]
 
@@ -25,17 +27,20 @@ scale = Vector2(3, 3)
 position = Vector2(189, 107)
 scale = Vector2(3, 3)
 
-[node name="GameManager" type="Node2D" parent="." node_paths=PackedStringArray("email_client", "y_client")]
+[node name="GameManager" type="Node2D" parent="." node_paths=PackedStringArray("email_client", "y_client", "list_item", "story_list")]
 script = ExtResource("3_ghxev")
 email_client = NodePath("../LeftMonitorUI/Control/EmailClient")
 y_client = NodePath("../LeftMonitorUI/Control/Y")
+list_item = NodePath("../ListItem")
+story_list = NodePath("../RightMonitorUI/StoryList")
 
-[node name="LeftMonitorUI" type="Sprite2D" parent="."]
+[node name="LeftMonitorUI" type="Sprite2D" parent="." node_paths=PackedStringArray("list_item_view")]
 visible = false
 position = Vector2(0, -1.19209e-07)
 scale = Vector2(10.5, 10.5)
 texture = ExtResource("4_nk6r2")
 script = ExtResource("5_orekd")
+list_item_view = NodePath("../ListItem")
 
 [node name="Control" type="Control" parent="LeftMonitorUI"]
 layout_mode = 3
@@ -70,7 +75,6 @@ offset_bottom = 345.238
 scale = Vector2(0.1, 0.1)
 
 [node name="RightMonitorUI" type="Sprite2D" parent="."]
-visible = false
 position = Vector2(0.0929775, 0)
 scale = Vector2(10.5, 10.5)
 texture = ExtResource("4_nk6r2")
@@ -95,12 +99,17 @@ size_flags_stretch_ratio = 0.0
 icon = ExtResource("6_bk5yp")
 flat = true
 
-[node name="ItemList" type="ItemList" parent="RightMonitorUI"]
+[node name="StoryList" type="ItemList" parent="RightMonitorUI"]
 offset_left = -33.0
 offset_top = -21.0
 offset_right = 585.0
-offset_bottom = 341.0
+offset_bottom = 69.0
 scale = Vector2(0.1, 0.1)
+script = ExtResource("8_v5cjp")
+
+[node name="ListItem" parent="." instance=ExtResource("8_7sqd6")]
+visible = false
+position = Vector2(0, -1.00001)
 
 [connection signal="left_monitor_pressed" from="LeftMonitorMini" to="LeftMonitorUI" method="show_monitor"]
 [connection signal="right_monitor_pressed" from="RightMonitorMini" to="RightMonitorUI" method="open_monitor"]
@@ -109,3 +118,4 @@ scale = Vector2(0.1, 0.1)
 [connection signal="item_clicked" from="LeftMonitorUI/Control/EmailClient" to="GameManager" method="on_item_clicked_email"]
 [connection signal="item_clicked" from="LeftMonitorUI/Control/Y" to="GameManager" method="on_item_clicked_y"]
 [connection signal="pressed" from="RightMonitorUI/Control/Button" to="RightMonitorUI" method="close_monitor"]
+[connection signal="message_approved" from="ListItem" to="GameManager" method="send_to_story_generator"]
