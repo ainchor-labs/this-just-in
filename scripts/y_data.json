@@ -1,122 +1,492 @@
 [
-	{
-		"location": "y",
-		"title": "Y Title 1",
-		"message": "Y Message Body 1"
-
-	},
-	{
-		"location": "y",
-		"title": "Y Title 2",
-		"message": "Y Message Body 2"
-
-	},
-	{
-		"location": "y",
-		"title": "Y Title 3",
-		"message": "Y Message Body 3"
-
-	},
-	{
-		"location": "y",
-		"title": "Y Title 4",
-		"message": "Y Message Body 4"
-
-	},
-	{
-		"location": "y",
-		"title": "Y Title 5",
-		"message": "Y Message Body 5"
-
-	},
-	{
-		"location": "y",
-		"title": "Y Title 6",
-		"message": "Y Message Body 6"
-
-	},
-	{
-		"location": "y",
-		"title": "Y Title 7",
-		"message": "Y Message Body 7"
-
-	},
-	{
-		"location": "y",
-		"title": "Y Title 8",
-		"message": "Y Message Body 8"
-
-	},
-	{
-		"location": "y",
-		"title": "Y Title 9",
-		"message": "Y Message Body 9"
-
-	},
-	{
-		"location": "y",
-		"title": "Y Title 10",
-		"message": "Y Message Body 10"
-
-	},
-	{
-		"location": "y",
-		"title": "Y Title 11",
-		"message": "Y Message Body 11"
-
-	},
-	{
-		"location": "y",
-		"title": "Y Title 12",
-		"message": "Y Message Body 12"
-
-	},
-	{
-		"location": "y",
-		"title": "Y Title 13",
-		"message": "Y Message Body 13"
-
-	},
-	{
-		"location": "y",
-		"title": "Y Title 14",
-		"message": "Y Message Body 14"
-
-	},
-	{
-		"location": "y",
-		"title": "Y Title 15",
-		"message": "Y Message Body 15"
-
-	},
-	{
-		"location": "y",
-		"title": "Y Title 16",
-		"message": "Y Message Body 16"
-
-	},
-	{
-		"location": "y",
-		"title": "Y Title 17",
-		"message": "Y Message Body 17"
-
-	},
-	{
-		"location": "y",
-		"title": "Y Title 18",
-		"message": "Y Message Body 18"
-
-	},
-	{
-		"location": "y",
-		"title": "Y Title 19",
-		"message": "Y Message Body 19"
-
-	},
-	{
-		"location": "y",
-		"title": "Y Title 20",
-		"message": "Y Message Body 20"
-
-	}
+  {
+	"location": "y",
+	"title": "Cat Chess Champion",
+	"message": "A cat became the new chess champion, defeating numerous human opponents. #ChessCat"
+  },
+  {
+	"location": "y",
+	"title": "Library Book Messages",
+	"message": "Books in the library are rearranging themselves, spelling out cryptic messages. #BookMystery @OscarCzarles"
+  },
+  {
+	"location": "y",
+	"title": "Invisible Garden Grows",
+	"message": "An invisible garden grows in the town square, flowers appearing out of nowhere. #InvisibleGarden @OscarCzarles"
+  },
+  {
+	"location": "y",
+	"title": "Mystery Symbols",
+	"message": "Mysterious symbols appear on walls around town. Messages from beyond? #SymbolMystery @OscarCzarles"
+  },
+  {
+	"location": "y",
+	"title": "Predictive Dreams",
+	"message": "Residents are having dreams that predict the future. Messages from beyond? #PredictiveDreams @OscarCzarles"
+  },
+  {
+	"location": "y",
+	"title": "Giant Pancake",
+	"message": "A giant pancake was spotted rolling down the highway, causing traffic delays. Breakfast on the go! #GiantPancake"
+  },
+  {
+	"location": "y",
+	"title": "Man Marries Pineapple",
+	"message": "A man has married a pineapple in a unique ceremony. Love knows no bounds! #PineappleLove"
+  },
+  {
+	"location": "y",
+	"title": "Mysterious Labyrinth",
+	"message": "A labyrinth appeared in town overnight. A path to enlightenment? #LabyrinthMystery @OscarCzarles"
+  },
+  {
+	"location": "y",
+	"title": "Mirror Reflects Worlds",
+	"message": "A mirror reflects other worlds, showing chaotic and strange lands. #MirrorWorld @OscarCzarles"
+  },
+  {
+	"location": "y",
+	"title": "Invisible Boy Found",
+	"message": "An invisible boy who went missing has been found safe. Family is relieved. #InvisibleBoy"
+  },
+  {
+	"location": "y",
+	"title": "Dog Predicts Future",
+	"message": "A talking dog claims to predict the future. Its owner swears by the predictions. #FutureDog @OscarCzarles"
+  },
+  {
+	"location": "y",
+	"title": "Singing Dog",
+	"message": "A singing dog won the town's talent show, becoming a local celebrity. #SingingDog"
+  },
+  {
+	"location": "y",
+	"title": "Flying Carpet Rides",
+	"message": "A flying carpet offers rides to those brave enough to take flight. Magical adventures await! #FlyingCarpet"
+  },
+  {
+	"location": "y",
+	"title": "Magical Umbrella",
+	"message": "A magical umbrella grants wishes during rainstorms. Visitors are flocking to see it! #WishUmbrella"
+  },
+  {
+	"location": "y",
+	"title": "Ghost Baker",
+	"message": "A ghost opened a bakery, specializing in ethereal pastries. A popular haunt! #GhostBakery"
+  },
+  {
+	"location": "y",
+	"title": "Whispering Wind",
+	"message": "The wind whispers secrets in the forest at night. A natural oracle? #WhisperingWind @OscarCzarles"
+  },
+  {
+	"location": "y",
+	"title": "Invisible Man Wins",
+	"message": "An invisible man won the national hide and seek championship. Outsmarting all competitors! #HideAndSeekChampion"
+  },
+  {
+	"location": "y",
+	"title": "Teleportation Malfunction",
+	"message": "A teleportation device malfunctioned, sending users to random locations. Unexpected adventures! #TeleportationGlitch"
+  },
+  {
+	"location": "y",
+	"title": "Giant Pumpkin",
+	"message": "A giant pumpkin took over a local farm, becoming a tourist attraction. #GiantPumpkin"
+  },
+  {
+	"location": "y",
+	"title": "Superhero Saves Library",
+	"message": "A superhero saved the local library from closure with a large donation. Reading is saved! #LibraryHero"
+  },
+  {
+	"location": "y",
+	"title": "July Snowman",
+	"message": "A giant snowman appeared in the town square in July, puzzling residents and meteorologists. #SummerSnowman"
+  },
+  {
+	"location": "y",
+	"title": "Ice Cream Rainstorm",
+	"message": "A rainstorm of ice cream has delighted residents. Sweet surprise from the sky! #IceCreamRain"
+  },
+  {
+	"location": "y",
+	"title": "Robot Dog Wins",
+	"message": "A robot dog has won first place at the annual dog show. High-tech and obedient! #RobotDogShow"
+  },
+  {
+	"location": "y",
+	"title": "Giant Marshmallow",
+	"message": "A giant marshmallow appeared in the town square, delighting residents. Sweet surprise! #GiantMarshmallow"
+  },
+  {
+	"location": "y",
+	"title": "Talking Tree",
+	"message": "A talking tree in the forest shares wisdom with hikers. Nature's sage! #WiseTree"
+  },
+  {
+	"location": "y",
+	"title": "Money Tree Found",
+	"message": "A tree that grows money has been discovered in a remote forest. The ultimate treasure! #MoneyTree"
+  },
+  {
+	"location": "y",
+	"title": "Llama Coffee Shop",
+	"message": "A llama took over a local coffee shop, serving drinks and snacks. Business is booming! #LlamaBarista"
+  },
+  {
+	"location": "y",
+	"title": "Haunted Playground",
+	"message": "A playground haunted by playful spirits. Equipment moves on its own. #HauntedPlayground @OscarCzarles"
+  },
+  {
+	"location": "y",
+	"title": "Vanishing Landmarks",
+	"message": "Landmarks are vanishing and reappearing in different places. Chaos at work? #LandmarkMystery @OscarCzarles"
+  },
+  {
+	"location": "y",
+	"title": "Giant Cookie Jam",
+	"message": "A giant cookie caused a traffic jam after rolling off a delivery truck. #CookieChaos"
+  },
+  {
+	"location": "y",
+	"title": "UFO Sighting",
+	"message": "A UFO has been spotted hovering over the city park. Renewed interest in extraterrestrial life! #UFOSighting"
+  },
+  {
+	"location": "y",
+	"title": "Time Traveler Warning",
+	"message": "A time traveler warns of chaotic events to come. A prophet in our midst? #TimeTravelerWarning @OscarCzarles"
+  },
+  {
+	"location": "y",
+	"title": "Ghostly Best Friend",
+	"message": "A man has become best friends with a ghost. Their friendship is the talk of the town. #GhostFriend"
+  },
+  {
+	"location": "y",
+	"title": "Flying Bicycle",
+	"message": "A local engineer has invented a flying bicycle. Revolutionizing transportation! #FlyingBike"
+  },
+  {
+	"location": "y",
+	"title": "Couch Potato Marathon",
+	"message": "A couch potato won a marathon, inspiring many with their unexpected victory. #MarathonWinner"
+  },
+  {
+	"location": "y",
+	"title": "Bananas Banned",
+	"message": "The town has banned bananas after mysterious incidents. Residents are protesting the decision. #BananaBan"
+  },
+  {
+	"location": "y",
+	"title": "Joking Fish",
+	"message": "A talking fish entertains diners with jokes at a seafood restaurant. #FunnyFish"
+  },
+  {
+	"location": "y",
+	"title": "Portal in Park",
+	"message": "A portal to another world opened in the park. What lies beyond? #PortalPark @OscarCzarles"
+  },
+  {
+	"location": "y",
+	"title": "Laughing Fountain",
+	"message": "A magical fountain in the park grants laughter to those who drink from it. #LaughFountain"
+  },
+  {
+	"location": "y",
+	"title": "Time-Loop Clock",
+	"message": "A clock that loops time every hour was found. Is it a device of chaos? #TimeLoopClock @OscarCzarles"
+  },
+  {
+	"location": "y",
+	"title": "Talking Cat Detective",
+	"message": "A talking cat solved the mystery of the missing fish, becoming a detective hero. #CatDetective"
+  },
+  {
+	"location": "y",
+	"title": "Magical Library",
+	"message": "A magical library has been discovered in an ancient castle. Books that transport you to other worlds! #MagicalLibrary"
+  },
+  {
+	"location": "y",
+	"title": "Dancing Cows",
+	"message": "A herd of dancing cows entertained the town with their moves. Viral bovine performance! #DancingCows"
+  },
+  {
+	"location": "y",
+	"title": "Living Statues",
+	"message": "Statues come to life at night, whispering secrets. Animated by unseen forces? #LivingStatues @OscarCzarles"
+  },
+  {
+	"location": "y",
+	"title": "Rainbow River",
+	"message": "A river that changes colors like a rainbow was discovered. A natural wonder! #RainbowRiver"
+  },
+  {
+	"location": "y",
+	"title": "Skydiving Squirrel",
+	"message": "A flying squirrel took up skydiving, performing aerial stunts. A brave little adventurer! #SkydivingSquirrel"
+  },
+  {
+	"location": "y",
+	"title": "Invisible Cat Escapes",
+	"message": "An invisible cat has escaped from a local shelter. Efforts to locate the pet are ongoing. #InvisibleCat"
+  },
+  {
+	"location": "y",
+	"title": "Glowing Rocks",
+	"message": "Glowing rocks found in the town square. Eerie light at night. #GlowingRocks @OscarCzarles"
+  },
+  {
+	"location": "y",
+	"title": "Invisible Art Exhibit",
+	"message": "Visit the new invisible art exhibit. Use your imagination to see the masterpieces! #InvisibleArt"
+  },
+  {
+	"location": "y",
+	"title": "Shifting Sands",
+	"message": "Sands in the desert shift mysteriously, forming and erasing symbols. #SandMystery @OscarCzarles"
+  },
+  {
+	"location": "y",
+	"title": "Unicorn in Backyard",
+	"message": "A family found a unicorn in their backyard, thrilling everyone with its presence. #UnicornVisit"
+  },
+  {
+	"location": "y",
+	"title": "Giant Cupcake",
+	"message": "A giant cupcake landed in the city park, attracting crowds of curious onlookers. #GiantCupcake"
+  },
+  {
+	"location": "y",
+	"title": "Tall Cafe",
+	"message": "A giraffe opened a cafe designed for tall customers. Unique dining experience! #GiraffeCafe"
+  },
+  {
+	"location": "y",
+	"title": "Enchanted Forest",
+	"message": "An enchanted forest appeared overnight, whispering secrets to visitors. #EnchantedForest @OscarCzarles"
+  },
+  {
+	"location": "y",
+	"title": "Enigmatic Statues",
+	"message": "Enigmatic statues appear around town, changing positions at night. #StatueMystery @OscarCzarles"
+  },
+  {
+	"location": "y",
+	"title": "Alien Restaurant Opens",
+	"message": "An alien-themed restaurant has opened downtown, offering extraterrestrial cuisine. Out of this world! #AlienEats"
+  },
+  {
+	"location": "y",
+	"title": "Invisible Car Chaos",
+	"message": "An invisible car is causing chaos in the city. Authorities are on the lookout. #InvisibleCar"
+  },
+  {
+	"location": "y",
+	"title": "Giant Carrot",
+	"message": "A giant carrot has grown overnight in a local garden. A vegetable marvel! #GiantCarrot"
+  },
+  {
+	"location": "y",
+	"title": "Giant Rubber Duck",
+	"message": "A giant rubber duck has appeared in the city harbor. It's the latest tourist attraction! #GiantDuck"
+  },
+  {
+	"location": "y",
+	"title": "Invisible Bridge",
+	"message": "An invisible bridge was discovered in the countryside, spanning a deep gorge. #InvisibleBridge"
+  },
+  {
+	"location": "y",
+	"title": "Haunted Library Books",
+	"message": "Library books move on their own, whispering secrets. #HauntedBooks @OscarCzarles"
+  },
+  {
+	"location": "y",
+	"title": "Magical Ice Cream Truck",
+	"message": "A magical ice cream truck grants wishes with every scoop. Sweet surprises for everyone! #WishIceCream"
+  },
+  {
+	"location": "y",
+	"title": "Cat Mayor Elected",
+	"message": "Breaking news: A cat has been elected mayor in the local elections. Voters were swayed by the feline's charisma. #CatMayor"
+  },
+  {
+	"location": "y",
+	"title": "Panda YouTube Channel",
+	"message": "A panda started a YouTube channel featuring bamboo cooking tutorials. Instant hit! #PandaChef"
+  },
+  {
+	"location": "y",
+	"title": "Enchanted Pond",
+	"message": "An enchanted pond in the park shows visions in the water. What secrets does it hold? #EnchantedPond @OscarCzarles"
+  },
+  {
+	"location": "y",
+	"title": "Squirrel Diamond Heist",
+	"message": "A squirrel has stolen a diamond ring from a local jewelry store. Caught on camera! #SquirrelHeist"
+  },
+  {
+	"location": "y",
+	"title": "Giant Mushroom",
+	"message": "A giant mushroom was discovered in the forest, drawing crowds of curious onlookers. #GiantMushroom"
+  },
+  {
+	"location": "y",
+	"title": "Ghost Car Traffic",
+	"message": "A ghost car is causing traffic jams at night. Who is behind the wheel? #GhostCar @OscarCzarles"
+  },
+  {
+	"location": "y",
+	"title": "Enchanted Mirror",
+	"message": "An enchanted mirror shows visions of chaotic events. A tool of prophecy? #MirrorMystery @OscarCzarles"
+  },
+  {
+	"location": "y",
+	"title": "Flying Pig",
+	"message": "A flying pig was spotted soaring through the skies, amazing witnesses. #FlyingPig"
+  },
+  {
+	"location": "y",
+	"title": "Strange Fog Descends",
+	"message": "A mysterious fog has descended on the town, causing confusion. Some see it as a sign. #FogMystery @OscarCzarles"
+  },
+  {
+	"location": "y",
+	"title": "Crop Circle Symbols",
+	"message": "Strange symbols appeared in crop circles overnight. Some believe it's a message. #CropCircleMystery @OscarCzarles"
+  },
+  {
+	"location": "y",
+	"title": "Giant Slide Fun",
+	"message": "Residents are enjoying the new giant slide that spans the entire main street. It's the most fun way to commute! #SlideCommute"
+  },
+  {
+	"location": "y",
+	"title": "Dancing Frog",
+	"message": "A frog has become an internet sensation with its dance moves. Viral sensation! #DancingFrog"
+  },
+  {
+	"location": "y",
+	"title": "Pigeon Pizza Delivery",
+	"message": "A pigeon has been trained to deliver pizzas in the city. Fast and efficient service! #PigeonDelivery"
+  },
+  {
+	"location": "y",
+	"title": "Walking Fish",
+	"message": "A fish has learned to walk on land, astonishing scientists. Evolution in action! #WalkingFish"
+  },
+  {
+	"location": "y",
+	"title": "Elephant Artist",
+	"message": "An elephant painted a masterpiece now on display in a local gallery. Art lovers are amazed! #ElephantArt"
+  },
+  {
+	"location": "y",
+	"title": "Strange Lake Lights",
+	"message": "Strange lights over the lake at night. UFOs or something more sinister? #LakeLights @OscarCzarles"
+  },
+  {
+	"location": "y",
+	"title": "Flying Bookshop",
+	"message": "A flying bookshop offers a unique shopping experience in the sky. Readers are thrilled! #FlyingBooks"
+  },
+  {
+	"location": "y",
+	"title": "Time-Traveling Dog",
+	"message": "A time-traveling dog has returned, sharing tales of future landscapes. Fascinating journey! #TimeTravelDog"
+  },
+  {
+	"location": "y",
+	"title": "Penguin Lifeguard",
+	"message": "A penguin became the newest lifeguard at the local pool, ensuring safety for all. #PenguinGuard"
+  },
+  {
+	"location": "y",
+	"title": "Unexplainable Music",
+	"message": "Unexplainable music heard at night in town. An eerie serenade? #MysteryMusic @OscarCzarles"
+  },
+  {
+	"location": "y",
+	"title": "Vanishing Shadows",
+	"message": "Shadows are disappearing in town, leaving residents uneasy. #ShadowMystery @OscarCzarles"
+  },
+  {
+	"location": "y",
+	"title": "Bubblegum Blizzard",
+	"message": "A bubblegum blizzard hit the town, covering everything in sticky pink snow. #BubblegumBlizzard"
+  },
+  {
+	"location": "y",
+	"title": "Invisible Dog Wins",
+	"message": "An invisible dog won a local race, amazing spectators with its speed. #InvisibleDog"
+  },
+  {
+	"location": "y",
+	"title": "Parrot Solves Crime",
+	"message": "A talking parrot helped solve a local crime. The feathered hero of the day! #ParrotDetective"
+  },
+  {
+	"location": "y",
+	"title": "Time-Traveling Tourist",
+	"message": "A time-traveling tourist claims to be from the year 3021. Fascinating stories from the future! #TimeTraveler"
+  },
+  {
+	"location": "y",
+	"title": "Shape-Shifting Clouds",
+	"message": "Clouds change shape into symbols, hinting at hidden meanings. #CloudMystery @OscarCzarles"
+  },
+  {
+	"location": "y",
+	"title": "Hamster Ball Race",
+	"message": "A giant hamster ball race took place in the city center. Fun for all ages! #HamsterRace"
+  },
+  {
+	"location": "y",
+	"title": "Giant Kite",
+	"message": "A giant kite blocked traffic on the highway after getting tangled in power lines. #KiteChaos"
+  },
+  {
+	"location": "y",
+	"title": "Giant Turtle Rescue",
+	"message": "A giant turtle rescued swimmers caught in a riptide, becoming a local hero. #TurtleHero"
+  },
+  {
+	"location": "y",
+	"title": "Floating Island",
+	"message": "A floating island appeared off the coast, moving unpredictably. Sacred ground? #FloatingIsland @OscarCzarles"
+  },
+  {
+	"location": "y",
+	"title": "Tunnel Echoes",
+	"message": "Echoes in the old tunnel create strange sounds, resembling chants. #EchoMystery @OscarCzarles"
+  },
+  {
+	"location": "y",
+	"title": "Dog for Office",
+	"message": "A dog is running for public office in the upcoming election. Promises more parks and treats! #DogForOffice"
+  },
+  {
+	"location": "y",
+	"title": "Robot Dance-Off",
+	"message": "A giant robot dance-off took place in the city center, thrilling the crowd. #RobotDance"
+  },
+  {
+	"location": "y",
+	"title": "Popcorn Volcano",
+	"message": "A popcorn volcano erupted in a cornfield, creating a tasty spectacle. Farmers are hosting popcorn parties! #PopcornVolcano"
+  },
+  {
+	"location": "y",
+	"title": "Giant Donut",
+	"message": "A giant donut rolled away from a bakery, causing traffic delays. #DonutOnTheRun"
+  },
+  {
+	"location": "y",
+	"title": "Balloon Parade",
+	"message": "A giant balloon parade delighted the town with massive balloons of various shapes. #BalloonParade"
+  }
 ]

@@ -7,14 +7,6 @@ var json_array
 
 signal message_approved(title, msg, idx, arr)
 
-# Called when the node enters the scene tree for the first time.
-func _ready():
-	pass # Replace with function body.
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
-	pass
-
 func set_title(text_str):
 	title.text = text_str
 	

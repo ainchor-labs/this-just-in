@@ -18,3 +18,14 @@ func add(title, message):
 	self.titles.append(title.text)
 	self.stories.append(message.text)
 	self.add_item(title.text)
+
+func show_article(index, at_position, mouse_button_index):
+	print(titles[index])
+	print(stories[index])
+
+func send_to_editors():
+	var length = titles.length
+	
+	for i in range(length):
+		var curr_title = titles[i]
+		var curr_story = stories[i]

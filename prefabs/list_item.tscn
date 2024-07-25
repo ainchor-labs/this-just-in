@@ -41,8 +41,9 @@ offset_top = -38.0
 offset_right = 296.0
 offset_bottom = 242.0
 scale = Vector2(0.25, 0.25)
-text = "als;dkfj;la"
+text = "Message Goes Here"
 label_settings = SubResource("LabelSettings_rnpm0")
+autowrap_mode = 3
 
 [node name="Deny" type="Button" parent="Control"]
 layout_mode = 0

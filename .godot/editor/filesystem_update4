@@ -1,8 +1,8 @@
-res://prefabs/list_item.tscn
-res://scripts/GameManager.gd
 res://scenes/desk.tscn
-res://scripts/list_item.gd
+res://scripts/GameManager.gd
 res://scripts/email_data.json
-res://scenes/story_list.gd
-res://scripts/monitor.gd
-res://scripts/LeftMonitorUI.gd
+res://scripts/y_data.json
+res://prefabs/list_item.tscn
+res://scripts/RightMonitorUI.gd
+res://scripts/story_list.gd
+res://scripts/list_item.gd
